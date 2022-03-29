@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
-import Logo from '../../assets/logo.png';
-import { FaBars, FaTimes } from 'react-icons/fa'
+import Logo from '../assets/logo.png';
+import { FaBars, FaTimes, FaLinkedin, FaTelegram, FaGithub, FaMailBulk, FaPhone} from 'react-icons/fa'
 
 const Navbar = () => {
     const [burger, setBurger] = useState(false);
@@ -36,10 +36,13 @@ const Navbar = () => {
             </ul>
 
             {/* Social  */}
-            <li><a href="">Linkedin</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <ul className='flew fixed left-0 top-[35%]'>
+                <li className='w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300'><a href="" className='flex items-center justify-between'>Linkedin  <FaLinkedin size={30}/></a></li>
+                <li className='w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300'><a href="" className='flex items-center justify-between'>Telegram  <FaTelegram size={30}/></a></li>
+                <li className='w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300'><a href="" className='flex items-center justify-between'>GitHub  <FaGithub size={30}/></a></li>
+                <li className='w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300'><a href="" className='flex items-center justify-between'>Email  <FaMailBulk size={30}/></a></li>
+                <li className='w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300'><a href="" className='flex items-center justify-between'>Phone  <FaPhone size={30}/></a></li>
+            </ul>
         </div>
     )
 }
