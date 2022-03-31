@@ -1,14 +1,15 @@
-import { Home, Navbar, About, Skils, Project } from './components';
+import { Home, Navbar, About, Skills, Project, Contact } from './components';
 
 function App() {
     return (
-		<>
+		<div>
 			<Navbar />
 			<Home />
 			<About />
-			<Skils />
+			<Skills />
 			<Project />
-		</>			
+			<Contact />
+		</div>			
     );
 }
 

@@ -3,24 +3,47 @@ import Logo from '../assets/logo.png';
 import { FaBars, FaTimes, FaLinkedin, FaTelegram, FaGithub, FaPhone} from 'react-icons/fa';
 import { HiOutlineMail} from 'react-icons/hi';
 import { BsFillPersonFill} from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [burger, setBurger] = useState(false);
     const handleClickBurger = () => setBurger(!burger)
     return (
-        <div className='fixed w-full h-[100px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 pt-4 bg-[#0a192f] text-gray-300'>
             {/* LOGO */}
-            <div className='w-[100px] mt-3' >
-                <img src={Logo} alt="Logo"/>
+            <div className='w-[100px] cursor-pointer' >
+                <Link to='home' duration={300} smooth={true}>
+                    <img src={Logo} alt="Logo"/>
+                </Link>
             </div>
 
             {/* Menu */}
             <ul className='hidden md:flex'>
-                <li className='hover:text-white'>Home</li>
-                <li className='hover:text-white'>About</li>
-                <li className='hover:text-white'>Skills</li>
-                <li className='hover:text-white'>Works</li>
-                <li className='hover:text-white'>Contact</li>
+                <li className='hover:text-white'>
+                    <Link to='home' duration={300} smooth={true}>
+                        Home
+                    </Link>
+                </li>
+                <li className='hover:text-white'>
+                    <Link to='about' duration={300} smooth={true}>
+                        About
+                    </Link>
+                </li>
+                <li className='hover:text-white'>
+                    <Link to='skills' duration={300} smooth={true}>
+                        Skills
+                    </Link>
+                </li>
+                <li className='hover:text-white'>
+                    <Link to='projects' duration={300} smooth={true}>
+                        Projects
+                    </Link>
+                </li>
+                <li className='hover:text-white'>
+                    <Link to='contact' duration={300} smooth={true}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             {/* Hamburger */}
@@ -30,11 +53,31 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <ul className={!burger ? 'hidden' : 'absolute left-0 top-0 flex justify-center items-center flex-col h-screen bg-[#0a192f] w-full'}>
-                <li className='py-4 text-4xl'>Home</li>
-                <li className='py-4 text-4xl'>About</li>
-                <li className='py-4 text-4xl'>Skills</li>
-                <li className='py-4 text-4xl'>Works</li>
-                <li className='py-4 text-4xl'>Contact</li>
+            <li className='py-4 text-4xl'>
+                    <Link onClick={handleClickBurger} to='home' duration={300} smooth={true}>
+                        Home
+                    </Link>
+                </li>
+                <li className='py-4 text-4xl'>
+                    <Link onClick={handleClickBurger} to='about' duration={300} smooth={true}>
+                        About
+                    </Link>
+                </li>
+                <li className='py-4 text-4xl'>
+                    <Link onClick={handleClickBurger} to='skills' duration={300} smooth={true}>
+                        Skills
+                    </Link>
+                </li>
+                <li className='py-4 text-4xl'>
+                    <Link onClick={handleClickBurger} to='projects' duration={300} smooth={true}>
+                        Projects
+                    </Link>
+                </li>
+                <li className='py-4 text-4xl'>
+                    <Link onClick={handleClickBurger} to='contact' duration={300} smooth={true}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             {/* Social  */}
