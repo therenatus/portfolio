@@ -4,6 +4,7 @@ import { FaBars, FaTimes, FaLinkedin, FaTelegram, FaGithub, FaPhone} from 'react
 import { HiOutlineMail} from 'react-icons/hi';
 import { BsFillPersonFill} from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import Resume from './../assets/doc/resume.pdf'
 
 const Navbar = () => {
     const [burger, setBurger] = useState(false);
@@ -82,14 +83,13 @@ const Navbar = () => {
 
             {/* Social  */}
             <ul className='sm:flex flex-col hidden fixed left-0 top-[35%]'>
-                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-blue-600'><a href="" className='flex items-center justify-between w-full text-white'>Linkedin  <FaLinkedin size={30}/></a></li>
-                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-blue-500'><a href="" className='flex items-center justify-between w-full text-white'>Telegram  <FaTelegram size={30}/></a></li>
-                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-[#333] items-center'><a href="" className='flex items-center justify-between w-full text-white'>GitHub  <FaGithub size={30}/></a></li>
-                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-[#6fc2b0]'><a href="" className='flex items-center justify-between w-full text-white'>Email  <HiOutlineMail size={30}/></a></li>
-                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-[#565f69]'><a href="" className='flex items-center justify-between w-full text-white'>Resume  <BsFillPersonFill size={30}/></a></li>
+                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-blue-600'><a href="https://www.linkedin.com/in/therenatus/" target='_blank' className='flex items-center justify-between w-full text-white'>Linkedin  <FaLinkedin size={30}/></a></li>
+                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-blue-500'><a href="https://t.me/therenatus" target='_blank' className='flex items-center justify-between w-full text-white'>Telegram  <FaTelegram size={30}/></a></li>
+                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-[#333] items-center'><a href="https://github.com/therenatus" target='_blank' className='flex items-center justify-between w-full text-white'>GitHub  <FaGithub size={30}/></a></li>
+                <li className='flex justify-between w-[150px] h-[60px] ml-[-93px] hover:ml-[0px] duration-300 bg-[#565f69]'><a href={Resume} target='_blank' className='flex items-center justify-between w-full text-white'>Resume  <BsFillPersonFill size={30}/></a></li>
             </ul>
         </div>
     )
 }
 
-export default Navbar
+export default Navbar;

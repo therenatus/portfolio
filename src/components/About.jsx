@@ -12,12 +12,11 @@ const About = () => {
             </div>
             <div className='sm:grid grid-cols-2 gap-8 w-full'>
                 <div className='sm:text-right pb-8 pl-4'>
-                    <p className='sm:text-right text-4xl font-bold'>Hi. I'm Clint, nice to meet you. Please take a look around.</p>
+                    <p className='sm:text-right text-4xl font-bold'>Hi. I'm Rinad, nice to meet you. Please take a look around.</p>
                 </div>
                 <div className='pb-8 pl-4'>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, officia sunt atque expedita soluta, tempore reprehenderit quos ipsam officiis voluptatibus quo quisquam odit provident deserunt non, ducimus at similique dolorum?
-                        Debitis iure doloribus cum eius consequatur repudiandae incidunt aut officiis, placeat dolorem natus voluptatum libero sequi officia sunt voluptate optio? Ullam quam iure, dolorem nobis quae facilis! Optio, eveniet tempore?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eius tempora sequi id debitis, deleniti voluptate labore sint aliquid temporibus enim sit? Cumque adipisci similique, distinctio rerum tempora in necessitatibus?
                     </p>
                 </div>
             </div>
