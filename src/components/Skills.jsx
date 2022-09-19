@@ -5,6 +5,8 @@ import Css from '../assets/css.png';
 import ReactLogo from '../assets/react.png';
 import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png'
+import Node from '../assets/node.png';
+import Mongo from '../assets/mongo.png';
 
 const Skills = () => {
     return (
@@ -15,7 +17,7 @@ const Skills = () => {
                     <p className='text-4xl border-b-4 inline border-blue-400 font-bold'>Skills</p>
                 </div>
                 <div className=' w-full grid grid-cols-2 gap-4 text-center py-8  sm:grid-cols-3'>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'> 
                         <img className='w-20 mx-auto' src={Html} alt="Image" />
                         <p className='my-4'>HTML</p>
                     </div>
@@ -27,7 +29,7 @@ const Skills = () => {
                         <img className='w-20 mx-auto' src={Js} alt="Image" />
                         <p className='my-4'>JavaScript</p>
                     </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <div className='shadow-md shadow-[#161004] hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={ReactLogo} alt="Image" />
                         <p className='my-4'>React</p>
                     </div>
@@ -38,6 +40,14 @@ const Skills = () => {
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={GitHub} alt="Image" />
                         <p className='my-4'>GitHub</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <img className='w-20 mx-auto' src={Node} alt="Image" />
+                        <p className='my-4'>Node.js</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <img className='w-20 mx-auto' src={Mongo} alt="Image" />
+                        <p className='my-4'>MongoDB</p>
                     </div>
                 </div>
             </div>
