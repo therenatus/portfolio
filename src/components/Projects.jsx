@@ -58,7 +58,7 @@ const Projects = () => {
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='font-bold text-2xl'>MERN FullStack Application</span>
                         <div className='text-center mt-4'>
-                            <a href="http://212.112.120.194:3000/" target='_blank'><button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button></a>
+                            <a href="http://zakupki-manas.kg/" target='_blank'><button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button></a>
                             <a href="https://github.com/therenatus/crypto-app" target='_blank'><button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button></a>
                         </div>
                     </div>
